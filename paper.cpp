@@ -33,7 +33,7 @@ void menu()
     cout<<"Press 1 to play game and 2 to quit game"<<endl;
 }
 
-void mcu_endgame()
+void end_game()
 {
     if(p=="rock" && c=="scissors" || p=="scissors" && c=="paper" || p=="paper" && c=="rock")
        cout<<"You won the Game!!!"<<endl;
@@ -66,7 +66,7 @@ int main()
            computer();
            while(choice==1)
            {
-               mcu_endgame();
+               end_game();
                choice=2;
                break;
            }
